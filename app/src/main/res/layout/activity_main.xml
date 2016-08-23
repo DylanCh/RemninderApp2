@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.google.reminderapp.reminderapp2.MainActivity">
+    <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+    <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schedule"
+        android:id="@+id/button1"
+        android:onClick="scheduleAlarm"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/date"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Due date (MM/dd/yyyy)" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/courseNum"
+        android:hint="Course Name"
+        android:layout_below="@+id/date"
+        android:layout_alignEnd="@+id/date"
+        android:layout_alignStart="@+id/date" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/assignmentNum"
+        android:layout_below="@+id/courseNum"
+        android:layout_centerHorizontal="true"
+        android:hint="Assignment #" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneNum"
+        android:digits="1234567890"
+        android:layout_alignEnd="@+id/assignmentNum"
+        android:layout_below="@+id/assignmentNum"
+        android:layout_alignStart="@+id/assignmentNum"
+        android:hint="Phone Number (10 digits)"
+        android:maxLength="14"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show All Records"
+        android:id="@+id/showAll"
+        android:layout_below="@+id/button1"
+        android:onClick="showList"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

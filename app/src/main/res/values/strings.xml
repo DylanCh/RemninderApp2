@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ReminderApp2</string>
+    <string name="title_activity_edit">Edit a Reminder</string>
+</resources>

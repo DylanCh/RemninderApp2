@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentEnd="true" -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/DisplayDetails"
+        android:layout_alignEnd="@+id/goBackToMain"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Another Reminder"
+        android:id="@+id/goBackToMain"
+        android:onClick="goBackToMain"
+        android:layout_below="@+id/DisplayDetails"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit This Reminder"
+        android:id="@+id/editButton"
+        android:onClick="editRecord"
+        android:layout_below="@+id/goBackToMain"
+        android:visibility="gone"
+        android:layout_alignStart="@+id/goBackToMain"
+        android:layout_alignEnd="@+id/goBackToMain" />
+
+    <!--android:drawableLeft="@drawable/ic_addReminder" />-->
+</RelativeLayout>
